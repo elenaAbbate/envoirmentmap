@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappa Energia Rinnovabile 2023</title>
+
+    <!-- Includi il file CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Includi Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Includi PapaParse per leggere il CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Produzione di Energie Rinnovabili nel Mondo (2023)</h2>
+    <div id="map"></div>
+    <div class="legend" id="legend">
+        <h4>Legenda</h4>
+        <div><span style="background-color: #006400;"></span> > 80%</div>
+        <div><span style="background-color: #228B22;"></span> 60% - 80%</div>
+        <div><span style="background-color: #ADFF2F;"></span> 40% - 60%</div>
+        <div><span style="background-color: #FFFF00;"></span> 20% - 40%</div>
+        <div><span style="background-color: #FF4500;"></span> 10% - 20%</div>
+        <div><span style="background-color: #FF0000;"></span> < 10%</div>
+    </div>
+
+    <!-- Includi Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Includi il file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

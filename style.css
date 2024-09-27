@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 100vh; /* 100% dell'altezza della finestra */
+    width: 100vw;  /* 100% della larghezza della finestra */
+}
+
+/* Stile per la legenda */
+.legend {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2000; /* Aumentato per garantire visibilità */
+}
+
+.legend h4 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.legend div {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.legend span {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #999;
+    margin-right: 5px;
+}
